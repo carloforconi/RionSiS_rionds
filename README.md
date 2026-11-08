@@ -14,3 +14,7 @@ Check or adjust:
 - `BAND_E` and `BG_BANDS`
 - the `A1` calibration and staircase-fit settings
 - `FILE_START`, `BAD_RANGES`, and the simulation parameters
+
+## Half-life analysis with RionDS (`notebooks/rionsis_analysis.ipynb`)
+
+One notebook for the 72Ge (long and short settings) and 98Mo data sets: choose the data set with `DATASET` in the first cell and set `DATA_FILE` and `RIONDS_DIR` to your own paths. It extracts the single-ion step ΔI (mixture EM with a recovery test), the noise parameters σ0 and k, n̄ and I0, the exponential fit of the summed curve, and writes the RionDS input file (`simparams_<tag>.toml`).
